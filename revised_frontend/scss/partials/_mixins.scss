@@ -1,0 +1,27 @@
+@mixin google-font($font) {
+	$font: unquote($font);
+	@import url(https://fonts.googleapis.com/css?family=#{font});
+}
+
+@mixin navbar($navColor: $navbar-color) {
+	height: 10vh;
+	background-color: $navColor;
+
+	@include breakpoint($medium-screen) {
+		height: 16vh;
+	}
+}
+
+@mixin navLink($linkColor: $nav-text-color) {
+	color: $linkColor;
+	font-family: $nav-font;
+	text-decoration: none;
+	padding-left: gutter();
+	border-bottom: 1px solid transparentize(#fefefe, 1);
+	transition: border-bottom 0.5s;
+	transition-timing-function: ease-in-out;
+
+	&:hover {
+		border-bottom: 1px solid pacify(#fefefe, .5);
+	}
+}

@@ -1,0 +1,64 @@
+@import "partials/normalize";
+@import "susy";
+@import "breakpoint";
+@import "compass";
+
+@import "partials/functions";
+@import "partials/variables";
+@import "partials/mixins";
+
+@include google-font("Roboto+Condensed");
+
+$susy: (
+	columns: 12,
+	// debug: (image: show),
+	global-box-sizing: border-sizing
+);
+
+@include border-box-sizing;
+
+.navbar {
+	@include navbar;
+	@include container();
+	margin-bottom: 1px;
+
+	li {
+		display: none;
+		@include breakpoint($medium-screen) {
+			display: inline;
+		}
+	}
+
+	ul {
+		padding-top: 12vh;
+		margin: 0;
+	}
+
+	a {
+		@include navLink;
+		display: inline;
+	}
+}
+
+.deck-index {
+	list-style: none;
+}
+
+.nav-home {
+	float: left;
+	padding-top: 4vh;
+	font-size: em(36px);
+
+	@include breakpoint($medium-screen) {
+		padding-top: 10vh;
+	}
+}
+
+.nav-space {
+	height: 10vh;
+	@include span(1 of 12);
+
+	@include breakpoint($medium-screen) {
+		height: 16vh;
+	}
+}

@@ -1,0 +1,50 @@
+/*
+	1st hex: #4DD791;
+*/
+.error {
+	color: red;
+}
+
+.container {
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	max-width: 100% !important;
+}
+
+.navbar {
+	border-radius: 0rem !important;
+	background-color: #24CD77;
+	height: 85px;
+}
+
+.navbar-brand, .nav-link, .nav-item {
+	color: #F4E9F8 !important;
+	text-decoration: none;
+	font-family: 'Roboto Condensed', sans-serif;
+	display: inline-block;
+}
+
+.navbar-ul {
+	margin-left: 18rem;
+}
+
+.navbar-brand {
+	margin-top: 1.7rem;
+	margin-left: 4rem;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	font-size: 36px !important;
+	font-weight: bold;	
+}
+
+.nav-link {
+	list-style: none;
+	margin-left: .7rem;
+	margin-top: 2.6rem;
+}
+
+.form-group {
+	margin-top: .5rem;
+}
